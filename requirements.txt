@@ -1,0 +1,11 @@
+pandas
+flask
+dominate
+flask_nav
+flask_bootstrap
+selenium
+tqdm
+flask_wtf
+wtforms
+requests
+

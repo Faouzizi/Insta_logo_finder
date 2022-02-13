@@ -1,0 +1,29 @@
+<!-- here we add our contact forms -->
+{% block content %}
+<div class="contact">
+    <h3>Enter the Brand Name</h3>
+    <form action="{{ url_for('get_logo') }}" method=post>
+        <div>
+            <!-- name forms -->
+            <p>
+                {{ form.brand_name.label }} <br>
+                {{ form.brand_name(placeholder='Brand name ...') }}
+            </p>
+            <!-- Submit button -->
+            <p>
+                {{ form.submit }}
+            </p>
+        </div>
+        <div>
+            <a href="{{ url }}"> {{ url }}</a>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+
+<!-- add the right css file -->
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('.static', filename='styles.css')}}">
+{% endblock %}

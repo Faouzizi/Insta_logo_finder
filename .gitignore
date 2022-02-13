@@ -127,3 +127,26 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+# Ignore virtual env
+venv/*
+
+# Ignore .idea directory
+.idea/*
+
+# Ignore logo_finder.egg-info directory
+insta_logo_finder.egg-info/*
+
+# ignore lof_finder.iml file
+insta_logo_finder.iml
+
+# Ignore all files with extention .pyc
+*.pyc
+
+# Ignore the build directory
+build/*
+
+# Ignore logo_finder
+insta_logo_finder.iml
