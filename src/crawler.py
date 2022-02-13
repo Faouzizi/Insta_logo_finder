@@ -30,26 +30,15 @@ def setup_driver():
     insta_url = 'https://www.instagram.com/'
     #
     # Define the url to the webdriver
-    try:
-        webdriver_path = '/Users/elmbarki/Downloads/chromedriver'
-        s = Service(webdriver_path)
-        #
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        # Define the driver
-        driver = webdriver.Chrome(service=s, options=chrome_options)
-    except:
-        webdriver_path = '/usr/local/bin/chromedriver'
-        s = Service(webdriver_path)
-        #
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        # Define the driver
-        driver = webdriver.Chrome(service=s, options=chrome_options)
+    webdriver_path = '/usr/local/bin/chromedriver'
+    s = Service(webdriver_path)
+    #
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    # Define the driver
+    driver = webdriver.Chrome(service=s, options=chrome_options)
     time.sleep(wait_time)
     print('-'*100)
     print('driver selected')
